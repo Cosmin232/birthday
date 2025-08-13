@@ -1,0 +1,28 @@
+body {
+    background-color: antiquewhite;
+}
+
+.nav {
+    display: flex;
+    gap: 16px;
+    align-items: left;
+}
+
+.nav a { text-decoration: none; }
+
+h1 {
+    color: whitesmoke; 
+    background-color: darkseagreen;
+}
+
+#button {
+    background-color: darkseagreen;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 19px;
+}

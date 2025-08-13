@@ -5,28 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happy Birthday, Bro!!!</title>
     <style>
-        .anchor-link {
-            display: block;
-            margin-top: 10px;
+        body {
+            background-color: antiquewhite
+        }
+
+        .nav {
+            display: flex;
+            gap: 16px;
+            align-items: left;
+        }
+
+        .nav a { text-decoration: none; }
+
+        #button {
+            background-color: darkseagreen;
+            border: none;
+            border-radius: 10px;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 19px;
         }
     </style>
 </head>
 <body>
     <div style="text-align: center;font-size: 23px;">
-        <h1>Birthday Party Card</h1>
+        <h1 style="color: whitesmoke; background-color: darkseagreen;">Birthday Party Card</h1>
     </div>
     <div style="display: flex; align-items: center;">
         <img src="./Cake.gif" alt="Birthday Cake" style="width: 30%;">
         <div style="margin-left: 20px; text-align: center; font-size: 23px;">
             <h3>
-                To my remarkable brother: <br />
+                <h2>To my remarkable brother: </h2><br />
                 <br />
                 May this year deepen your strength,<br />
                 Enlighten your path,<br /> 
                 And fill your heart with purpose.<br />
                 <br />
                 <h2>Happy Birthday, Brother!!!</h2>
-                <a href="./Fairy/fairy.html" class="anchor-link" style="text-align: left; font-size: 23px;">Next Page</a>
+                <br />
+                <nav class="nav">
+                    <a href="./Fairy/fairy.html"><button id="button">Next Page</button></a>
+                </nav>
             </h3>
         </div>
     </div>
