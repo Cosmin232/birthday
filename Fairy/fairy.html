@@ -7,40 +7,131 @@
     <link rel="stylesheet" href="./style.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Caveat&family=Playwrite+AU+QLD:wght@100..400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Playwrite+AU+QLD:wght@100..400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: antiquewhite;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Caveat', 'Playwrite AU QLD', cursive, sans-serif;
+        }
+        .card-container {
+            background: lightgoldenrodyellow;
+            border-radius: 24px;
+            box-shadow: 0 8px 32px 0 rgba(60, 60, 60, 0.18);
+            padding: 48px 36px;
+            max-width: 900px;
+            width: 100%;
+            margin: 32px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .header-title {
+            color: #fff;
+            background-color: darkseagreen;
+            border-radius: 12px;
+            padding: 16px 0;
+            margin-bottom: 24px;
+            width: 100%;
+            text-align: center;
+            font-size: 2.2rem;
+            letter-spacing: 1px;
+            font-family: 'Playwrite AU QLD', serif;
+        }
+        .content-row {
+            display: flex;
+            align-items: flex-start;
+            width: 100%;
+            gap: 32px;
+        }
+        .fairy-img {
+            width: 200px;
+            border-radius: 16px;
+            box-shadow: 0 4px 16px 0 rgba(60, 60, 60, 0.10);
+        }
+        .message {
+            text-align: left;
+            font-size: 1.15rem;
+            color: #333;
+            flex: 1;
+            font-family: 'Caveat', cursive, sans-serif;
+        }
+        .message h2 {
+            color: #7fc7af;
+            margin: 0 0 8px 0;
+            font-family: 'Playwrite AU QLD', serif;
+        }
+        .nav {
+            display: flex;
+            gap: 16px;
+            margin-top: 24px;
+        }
+        .nav a { text-decoration: none; }
+        #button {
+            background-color: darkseagreen;
+            border: none;
+            border-radius: 10px;
+            color: white;
+            padding: 13px 28px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        #button:hover {
+            background-color: seagreen;
+        }
+        @media (max-width: 700px) {
+            .content-row {
+                flex-direction: column;
+                gap: 16px;
+                align-items: center;
+            }
+            .fairy-img {
+                width: 100%;
+                max-width: 220px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <div style="text-align: center;font-size: 23px;">
-        <h1>Wisdom Like Magic</h1>
-    </div>
-    <div style="display: flex; align-items: center;">
-        <img src="./Fairy.gif" alt="Birthday Fairy" style="width: 20%;">
-        <div style="margin-left: 20px; text-align: left; font-size: 18px;">
-            <h2>Wisdom is like Magic</h2>
-            <p>
-                Just like the birthday fairy standing calm and graceful in the water,<br /><br />
-                May your path through life be with quiet strength, deep wisdom and unwavering purpose.<br />
-                This new year of your journey is not just another chapter,<br />
-                It's a deeper dive into the man you're becoming: thoughtful, powerful and full of meaning.<br />
-                May you find the courage to face each challenge with the same calmness as the waves around this beautiful birthday fairy in the picture.<br />
-                May each sunrise bring new insights and each sunset a moment of reflection.<br />
-                <br />
-                May each step you take be guided by the wisdom you've gained.<br />
-                May each wave you face bring clarity.<br />
-                May each still moment bring peace.<br />
-                May each challenge you encounter be met with the strength that lies within you.<br />
-                And may your path forward reflect the same quiet dignity as the image before you.<br />
-                <br />
-                With consideration and love,<br />
-                <br />
-                Your brother,<br /> 
-                Cosmin<br />
-            </p>
-            <br />
-            <nav class="nav">
-                <a href="../index.html" alt="Previous Page"><button id="button">Previous Page</button></a>
-                <a href="../Party/party.html" alt="Next Page"><button id="button">Next Page</button></a>
-            </nav>
+    <div class="card-container">
+        <div class="header-title">
+            Wisdom Like Magic
+        </div>
+        <div class="content-row">
+            <img src="./Fairy.gif" alt="Birthday Fairy" class="fairy-img">
+            <div class="message">
+                <h2>Wisdom is like Magic</h2>
+                <p>
+                    Just like the birthday fairy standing calm and graceful in the water,<br /><br />
+                    May your path through life be with quiet strength, deep wisdom and unwavering purpose.<br />
+                    This new year of your journey is not just another chapter,<br />
+                    It's a deeper dive into the man you're becoming: thoughtful, powerful and full of meaning.<br />
+                    May you find the courage to face each challenge with the same calmness as the waves around this beautiful birthday fairy in the picture.<br />
+                    May each sunrise bring new insights and each sunset a moment of reflection.<br />
+                    <br />
+                    May each step you take be guided by the wisdom you've gained.<br />
+                    May each wave you face bring clarity.<br />
+                    May each still moment bring peace.<br />
+                    May each challenge you encounter be met with the strength that lies within you.<br />
+                    And may your path forward reflect the same quiet dignity as the image before you.<br />
+                    <br />
+                    With consideration and love,<br />
+                    <br />
+                    Your brother,<br /> 
+                    Cosmin<br />
+                </p>
+                <nav class="nav">
+                    <a href="../index.html" alt="Previous Page"><button id="button">Previous Page</button></a>
+                    <a href="../Party/party.html" alt="Next Page"><button id="button">Next Page</button></a>
+                </nav>
+            </div>
         </div>
     </div>
 </body>

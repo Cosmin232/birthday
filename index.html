@@ -6,13 +6,67 @@
     <title>Happy Birthday, Bro!!!</title>
     <style>
         body {
-            background-color: antiquewhite
+            background-color: antiquewhite;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card-container {
+            background: lightgoldenrodyellow;
+            border-radius: 24px;
+            box-shadow: 0 8px 32px 0 rgba(60, 60, 60, 0.18);
+            padding: 56px 48px; /* marit padding-ul */
+            max-width: 900px;   /* marit latimea maxima */
+            width: 100%;
+            margin: 32px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .header-title {
+            color: whitesmoke;
+            background-color: darkseagreen;
+            border-radius: 12px;
+            padding: 16px 0;
+            margin-bottom: 24px;
+            width: 100%;
+            text-align: center;
+            font-size: 2rem;
+            letter-spacing: 1px;
+        }
+
+        .content-row {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            gap: 32px;
+        }
+
+        .cake-img {
+            width: 180px;
+            border-radius: 16px;
+            box-shadow: 0 4px 16px 0 rgba(60, 60, 60, 0.10);
+        }
+
+        .message {
+            text-align: left;
+            font-size: 1.2rem;
+            color: #333;
+            flex: 1;
+        }
+
+        .message h2 {
+            color: darkseagreen;
+            margin: 0 0 8px 0;
         }
 
         .nav {
             display: flex;
             gap: 16px;
-            align-items: left;
+            margin-top: 24px;
         }
 
         .nav a { text-decoration: none; }
@@ -27,29 +81,43 @@
             text-decoration: none;
             display: inline-block;
             font-size: 19px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        #button:hover {
+            background-color: seagreen;
+        }
+        @media (max-width: 600px) {
+            .content-row {
+                flex-direction: column;
+                gap: 16px;
+            }
+            .cake-img {
+                width: 100%;
+                max-width: 220px;
+            }
         }
     </style>
 </head>
 <body>
-    <div style="text-align: center;font-size: 23px;">
-        <h1 style="color: whitesmoke; background-color: darkseagreen;">Birthday Party Card</h1>
-    </div>
-    <div style="display: flex; align-items: center;">
-        <img src="./Cake.gif" alt="Birthday Cake" style="width: 30%;">
-        <div style="margin-left: 20px; text-align: center; font-size: 23px;">
-            <h3>
-                <h2>To my remarkable brother: </h2><br />
-                <br />
-                May this year deepen your strength,<br />
-                Enlighten your path,<br /> 
-                And fill your heart with purpose.<br />
-                <br />
+    <div class="card-container">
+        <div class="header-title">
+            Birthday Party Card
+        </div>
+        <div class="content-row">
+            <img src="./Cake.gif" alt="Birthday Cake" class="cake-img">
+            <div class="message">
+                <h2>To my remarkable brother:</h2>
+                <p>
+                    May this year deepen your strength,<br>
+                    Enlighten your path,<br>
+                    And fill your heart with purpose.
+                </p>
                 <h2>Happy Birthday, Brother!!!</h2>
-                <br />
                 <nav class="nav">
                     <a href="./Fairy/fairy.html" alt="Next Page"><button id="button">Next Page</button></a>
                 </nav>
-            </h3>
+            </div>
         </div>
     </div>
 </body>
